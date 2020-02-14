@@ -1,4 +1,4 @@
-package com.yoekisoft.dmsdemo;
+package com.yoekisoft.dmsdemo.grid;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.squareup.picasso.Picasso;
+import com.yoekisoft.dmsdemo.R;
 
 import java.util.ArrayList;
 

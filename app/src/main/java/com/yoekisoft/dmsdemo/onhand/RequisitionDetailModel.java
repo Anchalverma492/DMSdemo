@@ -1,4 +1,4 @@
-package  com.yoekisoft.dmsdemo;
+package com.yoekisoft.dmsdemo.onhand;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -14,7 +14,13 @@ public class RequisitionDetailModel {
     @SerializedName("RequestQty")
     @Expose
     private String requestQty;
+    @SerializedName("ItemSku")
+    @Expose
+    private String itemSku;
 
+    @SerializedName("Loaction")
+    @Expose
+    private String location;
     public RequisitionDetailModel(String itemName, String itemNo, String requestQty) {
         this.itemName = itemName;
         this.itemNo = itemNo;

@@ -1,8 +1,10 @@
-package com.yoekisoft.dmsdemo;
+package com.yoekisoft.dmsdemo.onhand;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.yoekisoft.dmsdemo.R;
 
 public class MainActivity extends AppCompatActivity {
 

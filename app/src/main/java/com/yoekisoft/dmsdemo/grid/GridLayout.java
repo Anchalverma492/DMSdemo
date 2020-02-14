@@ -1,15 +1,14 @@
-package com.yoekisoft.dmsdemo;
+package com.yoekisoft.dmsdemo.grid;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
+import com.yoekisoft.dmsdemo.R;
+
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class GridLayout extends AppCompatActivity {
     private final String android_version_names[] = {

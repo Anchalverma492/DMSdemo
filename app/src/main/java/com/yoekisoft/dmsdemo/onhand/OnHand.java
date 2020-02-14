@@ -1,16 +1,15 @@
-package com.yoekisoft.dmsdemo;
+package com.yoekisoft.dmsdemo.onhand;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.yoekisoft.dmsdemo.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +21,6 @@ public class OnHand extends AppCompatActivity implements View.OnClickListener {
     ImageButton onhandsearchbutton;
     TextView itemcodedisplay, itemqtydisplay, itemnamedisplay;
     List<RequisitionDetailModel> itemlist;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

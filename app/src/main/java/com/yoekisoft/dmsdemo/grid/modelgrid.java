@@ -1,4 +1,4 @@
-package com.yoekisoft.dmsdemo;
+package com.yoekisoft.dmsdemo.grid;
 
 public class modelgrid {
 
