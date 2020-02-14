@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnHand">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_background"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="ItemCode"
+                android:layout_marginRight="3dp"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                app:fontFamily="@font/adamina" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/onhandsearchitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="4dp"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D596BCC0" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/onhandsearchbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:src="@drawable/ic_search" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="2dp"
+                        android:src="@drawable/ic_location" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/adamina"
+                            android:text="Location"
+                            android:textColor="@color/lightshade"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/itemlocationdisplay"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/adamina"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:text="abcd"
+                            android:textColor="@color/darkblue"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_number" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/adamina"
+                            android:text="Item Code"
+                            android:textColor="@color/lightshade"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/itemcodedisplay"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:elevation="5dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/adamina"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="abcd"
+                            android:textColor="@color/darkblue"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_onhand" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="9dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/adamina"
+                            android:text="Item Name"
+                            android:textColor="@color/lightshade"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/itemnamedisplay"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:elevation="5dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/adamina"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="abcd"
+                            android:textColor="@color/darkblue"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_sku" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/adamina"
+                            android:text="Item Sku"
+                            android:textColor="@color/lightshade"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/itemskudisplay"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/adamina"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:text="abcd"
+                            android:textColor="@color/darkblue"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/ic_quantity" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="9dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:elevation="5dp"
+                            android:enabled="false"
+                            android:fontFamily="@font/adamina"
+                            android:text="Quantity Onhand"
+                            android:textColor="@color/lightshade"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/itemqtydisplay"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@null"
+                            android:elevation="5dp"
+                            android:fontFamily="@font/adamina"
+                            android:gravity="center_vertical"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:text="abcd"
+                            android:textColor="@color/darkblue"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
